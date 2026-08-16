@@ -8,6 +8,7 @@ export default function Products() {
 	const { state, dispatch } = useStore()
 
 	useEffect(() => {
+		let mounted =true
 		setLoading(true)
 		fetch('https://fakestoreapi.com/products')
 			.then((res) => res.json())
