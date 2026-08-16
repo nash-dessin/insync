@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useStore } from './StoreContext';
 
 export default function Cart() {
 	const { state, dispatch } = useStore()
