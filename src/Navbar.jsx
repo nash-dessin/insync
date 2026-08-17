@@ -15,7 +15,7 @@ export default function Navbar() {
 		<nav className="nav">
 			<div className="nav-left">
 				<Link to="/" className="brand">
-					My Store
+					INSYNC Store ♤
 				</Link>
 			</div>
 			<div className="nav-right">
