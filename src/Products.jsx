@@ -22,7 +22,7 @@ export default function Products() {
 	}, [])
 
 	const query = state.filters.query.toLowerCase()
-	const visible = products.filter((p) => p.title.toLowerCase().includes(query) || p.description.toLowerCase().includes(query))
+	const visible = products.filter((prod) => prod.title.toLowerCase().includes(query) || prod.description.toLowerCase().includes(query))
 
 	return (
 		<section>
@@ -37,8 +37,8 @@ export default function Products() {
 			{loading && <p>Loading products...</p>}
 			{error && <p className="error">{error}</p>}
 			<div className="grid">
-				{visible.map((p) => (
-					<ProductCard key={p.id} product={p} />
+				{visible.map((prod) => (
+					<ProductCard key={prod.id} product={prod} />
 				))}
 			</div>
 		</section>
