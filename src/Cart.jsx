@@ -16,7 +16,7 @@ export default function Cart() {
 			<h2>Your Cart</h2>
 			{state.cart.length === 0 && (
 				<div>
-					<p>Your cart is empty.</p>
+					<p>Your cart is empty... Browse some more to add to your collection!</p>
 					<Link to="/products">Browse products➤</Link>
 				</div>
 			)}
@@ -36,7 +36,7 @@ export default function Cart() {
 									onChange={(e) => dispatch({ type: 'set_qty', payload: { id: item.id, qty: Number(e.target.value) } })}
 								/>
 							</label>
-							<button onClick={() => dispatch({ type: 'remove_from_cart', payload: item.id })}>Remove ➤</button>
+							<button onClick={() => dispatch({ type: 'remove_from_cart', payload: item.id })}> Remove ➤</button>
 						</div>
 					</li>
 				))}
