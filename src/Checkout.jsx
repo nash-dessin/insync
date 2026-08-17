@@ -1,4 +1,5 @@
 import React from "react";
+import { useStore } from "./StoreContext"; 
 
 export default function Checkout() {
 	const { state, dispatch } = useStore()
