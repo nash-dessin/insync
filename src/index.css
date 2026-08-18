@@ -1,4 +1,4 @@
-root{--accent:#2563eb;--muted:#6b7280}
+.root{--accent:#2563eb;--muted:#6b7280}
   *{box-sizing:border-box}
   body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#111;background:#f7f7fb}
   .container{max-width:1000px;margin:24px auto;padding:0 16px}
