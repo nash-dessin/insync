@@ -1,6 +1,6 @@
 .root{--accent:#2563eb;--muted:#6b7280}
   *{box-sizing:border-box}
-  body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#111;background:#f7f7fb}
+  body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#111;background:var(--gray-50)}
   .container{max-width:1000px;margin:24px auto;padding:0 16px}
   .nav{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#fff;border-bottom:1px solid #eee}
   .nav a{margin-left:12px;color:var(--muted);text-decoration:none}
